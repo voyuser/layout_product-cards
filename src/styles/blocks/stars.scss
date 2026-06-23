@@ -3,18 +3,18 @@
   width: 96px;
   justify-content: space-between;
   padding-right: 4px;
-}
 
-.stars__star {
-  width: 16px;
-  height: 16px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url('../images/star.svg');
-}
+  &__star {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../images/star.svg');
+  }
 
-@for $i from 1 to 5 {
-  .stars--#{$i} :nth-child(-n + #{$i}) {
-    background-image: url('../images/star-active.svg');
+  @for $i from 1 to 5 {
+    &--#{$i} :nth-child(-n + #{$i}) {
+      background-image: url('../images/star-active.svg');
+    }
   }
 }
