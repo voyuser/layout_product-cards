@@ -1,0 +1,99 @@
+@use '../utils/variables';
+
+.card {
+  font-family: Roboto, sans-serif;
+  width: variables.$card-width;
+  height: variables.$card-height;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f3f3f3;
+
+  &__title {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #060b35;
+    margin: 40px 16px 0 16px;
+  }
+
+  &__description {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #616070;
+    margin-top: 4px;
+    margin-left: 16px;
+  }
+
+  &__image {
+    width: 160px;
+    min-height: 134px;
+    background-image: url('../images/imac.jpeg');
+    background-repeat: no-repeat;
+    background-size: 160px 134px;
+    background-position: center center;
+    margin: 32px 19px 0 19px;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 24px 16px 0 16px;
+    align-items: center;
+  }
+
+  &__price-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #616070;
+  }
+
+  &__price-value {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #060b35;
+  }
+
+  &__review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 16px 0 16px;
+    align-items: center;
+  }
+
+  &__review-label {
+    font-weight: 400px;
+    font-size: 10px;
+    color: #060b35;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    text-align: center;
+    background-color: #00acdc;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin: 16px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    height: 40px;
+
+    &:hover {
+      background-color: white;
+      border: 1px solid #00acdc;
+      color: #00acdc;
+    }
+  }
+}
